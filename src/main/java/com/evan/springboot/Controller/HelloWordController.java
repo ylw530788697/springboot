@@ -12,7 +12,7 @@ public class HelloWordController {
     @RequestMapping("/hello")
     @ResponseBody
     public String hello(){
-        JSONObject
+
         return "helloWorld";
     }
 }
