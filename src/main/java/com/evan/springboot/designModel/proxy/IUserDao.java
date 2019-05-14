@@ -1,4 +1,4 @@
-package com.evan.springboot.study.proxy;
+package com.evan.springboot.designModel.proxy;
 
 public interface IUserDao {
     void sava();

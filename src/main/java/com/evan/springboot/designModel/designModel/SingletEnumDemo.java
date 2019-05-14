@@ -1,4 +1,4 @@
-package com.evan.springboot.study.designModel;
+package com.evan.springboot.designModel.designModel;
 
 public class SingletEnumDemo {
     private SingletEnumDemo(){}

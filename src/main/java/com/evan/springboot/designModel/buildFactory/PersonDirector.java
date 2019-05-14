@@ -1,4 +1,4 @@
-package com.evan.springboot.study.buildFactory;
+package com.evan.springboot.designModel.buildFactory;
 
 public class PersonDirector {
     public Person constructPersion(Builder builder){
@@ -15,7 +15,7 @@ public class PersonDirector {
         System.out.println(person.getFoot());
         System.out.println(person.getHead());
         StringBuilder stringBuilder = new StringBuilder();
-        stringBuilder.toString()
+        stringBuilder.toString();
 
     }
 }

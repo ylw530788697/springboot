@@ -1,4 +1,4 @@
-package com.evan.springboot.study.proxy;
+package com.evan.springboot.designModel.proxy;
 
 import org.springframework.cglib.proxy.Enhancer;
 import org.springframework.cglib.proxy.MethodInterceptor;

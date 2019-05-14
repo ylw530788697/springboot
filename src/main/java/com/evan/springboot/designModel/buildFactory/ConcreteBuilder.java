@@ -1,4 +1,4 @@
-package com.evan.springboot.study.buildFactory;
+package com.evan.springboot.designModel.buildFactory;
 
 public class ConcreteBuilder implements Builder {
 

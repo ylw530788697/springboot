@@ -1,4 +1,4 @@
-package com.evan.springboot.study.designModel;
+package com.evan.springboot.designModel.designModel;
 
 //懒汉
 public class SingleLanHan {

@@ -1,4 +1,4 @@
-package com.evan.springboot.study.proxy;
+package com.evan.springboot.designModel.proxy;
 
 import java.lang.reflect.InvocationHandler;
 import java.lang.reflect.Method;

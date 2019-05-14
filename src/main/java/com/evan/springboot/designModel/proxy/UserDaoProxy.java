@@ -1,4 +1,4 @@
-package com.evan.springboot.study.proxy;
+package com.evan.springboot.designModel.proxy;
 
 //静态代理
 public class UserDaoProxy implements IUserDao{
