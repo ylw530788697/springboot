@@ -1,5 +1,7 @@
 package com.evan.springboot.designModel.proxy;
 
+import com.evan.springboot.designModel.proxy.myproxy.MyInvocationHandler;
+
 import java.lang.reflect.InvocationHandler;
 import java.lang.reflect.Method;
 import java.lang.reflect.Proxy;
