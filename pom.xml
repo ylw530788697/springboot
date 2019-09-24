@@ -36,12 +36,6 @@
             <scope>test</scope>
         </dependency>
         <dependency>
-            <groupId>com.tencent.fit.tools.hbase</groupId>
-            <artifactId>remote-hbase</artifactId>
-            <version>1.0</version>
-            <scope>test</scope>
-        </dependency>
-        <dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
             <version>4.10</version>

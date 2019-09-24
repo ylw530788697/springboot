@@ -1,0 +1,18 @@
+package com.evan.springboot.designModelPractice.abstractFactory;
+
+/**
+ * @author evanYang
+ * @version 1.0
+ * @date 09/20/2019 15:18
+ */
+public class EngineB implements Engine {
+    @Override
+    public void run() {
+        System.out.println("转的慢");
+    }
+
+    @Override
+    public void start() {
+        System.out.println("启动快，手动挡");
+    }
+}
