@@ -1,7 +1,5 @@
 package com.evan.springboot.designModel.observerPattern;
 
-import sun.applet.Main;
-
 public class InternetWeather {
 
     public static void main(String[] args) {
