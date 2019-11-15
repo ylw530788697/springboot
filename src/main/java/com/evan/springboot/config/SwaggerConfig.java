@@ -24,7 +24,7 @@ import java.util.List;
  */
 @Configuration
 @EnableSwagger2
-@Profile({"dev","test","local"})
+//@Profile({"dev","test","local"})
 public class SwaggerConfig {
 
 
