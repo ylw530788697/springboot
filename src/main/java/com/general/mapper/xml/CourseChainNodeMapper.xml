@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.general.mapper.CourseChainNodeDao">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.general.model.CourseChainNodeModel">
+        <id column="id" property="id" />
+        <result column="chain_node_unique" property="chainNodeUnique" />
+        <result column="lesson_unique" property="lessonUnique" />
+        <result column="create_date" property="createDate" />
+        <result column="modify_date" property="modifyDate" />
+        <result column="is_delete" property="isDelete" />
+        <result column="show_time" property="showTime" />
+        <result column="closing_url" property="closingUrl" />
+        <result column="background_url" property="backgroundUrl" />
+        <result column="autoplay_time" property="autoplayTime" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id, chain_node_unique, lesson_unique, create_date, modify_date, is_delete, show_time, closing_url, background_url, autoplay_time
+    </sql>
+
+</mapper>

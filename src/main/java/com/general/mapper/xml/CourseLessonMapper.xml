@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.general.mapper.CourseLessonDao">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.general.model.CourseLessonModel">
+        <id column="id" property="id" />
+        <result column="lesson_unique" property="lessonUnique" />
+        <result column="course_unique" property="courseUnique" />
+        <result column="category_unique" property="categoryUnique" />
+        <result column="create_date" property="createDate" />
+        <result column="modify_date" property="modifyDate" />
+        <result column="is_delete" property="isDelete" />
+        <result column="title" property="title" />
+        <result column="description" property="description" />
+        <result column="cover_url" property="coverUrl" />
+        <result column="medium_url" property="mediumUrl" />
+        <result column="medium_type" property="mediumType" />
+        <result column="sequence" property="sequence" />
+        <result column="lesson_sort" property="lessonSort" />
+        <result column="can_experience" property="canExperience" />
+        <result column="is_publish" property="isPublish" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id, lesson_unique, course_unique, category_unique, create_date, modify_date, is_delete, title, description, cover_url, medium_url, medium_type, sequence, lesson_sort, can_experience, is_publish
+    </sql>
+
+</mapper>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.general.mapper.CourseCategoryDao">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.general.model.CourseCategoryModel">
+        <id column="id" property="id" />
+        <result column="category_unique" property="categoryUnique" />
+        <result column="course_unique" property="courseUnique" />
+        <result column="create_date" property="createDate" />
+        <result column="modify_date" property="modifyDate" />
+        <result column="is_delete" property="isDelete" />
+        <result column="title" property="title" />
+        <result column="cover_url" property="coverUrl" />
+        <result column="now_lesson_count" property="nowLessonCount" />
+        <result column="all_lesson_count" property="allLessonCount" />
+        <result column="is_publish" property="isPublish" />
+        <result column="update_time" property="updateTime" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id, category_unique, course_unique, create_date, modify_date, is_delete, title, cover_url, now_lesson_count, all_lesson_count, is_publish, update_time
+    </sql>
+
+</mapper>
