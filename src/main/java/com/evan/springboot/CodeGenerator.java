@@ -34,7 +34,7 @@ public class CodeGenerator {
 
     public static void main(String[] args) {
 
-        String packageName = "com.general";   // 生成的包名
+        String packageName = "com.evan.springboot.general";   // 生成的包名
         boolean serviceNameStartWithI = false;//user -> UserService, 设置成true: user -> IUserService
 
         String dir = "D:\\IdeaProject\\springboot\\src\\main\\java";
@@ -44,9 +44,7 @@ public class CodeGenerator {
         );
     }
     private static void generateByTables(boolean serviceNameStartWithI, String packageName, String dir, String... tableNames ) {
-
-
-        GlobalConfig config = new GlobalConfig();
+        GlobalConfig globalConfig = new GlobalConfig();
         //mysql
         //String dbUrl = "jdbc:mysql://127.0.0.1:3306/test?serverTimezone=CTT&useUnicode=true&characterEncoding=utf-8&allowMultiQueries=true";
         //DataSourceConfig dataSourceConfig = new DataSourceConfig();
@@ -81,10 +79,10 @@ public class CodeGenerator {
 
 
         // 全局配置
-        config.setActiveRecord(true)   //是否支持AR模式
+        globalConfig.setActiveRecord(true)   //是否支持AR模式
                 .setAuthor("EvanYang")   // 设置作者
                 .setOutputDir(dir)   // 设置生成的目标路径（绝对路径）
-                .setIdType(IdType.AUTO) //主键策略
+                .setIdType(IdType.UUID) //主键策略
                 .setBaseColumnList(true)  // 设置sql片段
                 .setBaseResultMap(true)  // resultMap
                 .setEnableCache(false)   // 不开缓存
@@ -95,11 +93,11 @@ public class CodeGenerator {
                 .setSwagger2(true)
                 .setFileOverride(true);  // 每一次生成需要覆盖
         if (!serviceNameStartWithI) {
-            config.setServiceName("%sProvider");
-            config.setServiceImplName("%sProviderImpl");
+            globalConfig.setServiceName("%sProvider");
+            globalConfig.setServiceImplName("%sProviderImpl");
         }
         //代码生成器
-        new AutoGenerator().setGlobalConfig(config)
+        new AutoGenerator().setGlobalConfig(globalConfig)
                 .setDataSource(dataSourceConfig)
                 .setStrategy(strategyConfig)
                 .setPackageInfo(
