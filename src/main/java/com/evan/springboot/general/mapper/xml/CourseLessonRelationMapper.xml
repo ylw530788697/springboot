@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.evan.springboot.general.mapper.CourseLessonRelationDao">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.evan.springboot.general.model.CourseLessonRelationModel">
+        <id column="id" property="id" />
+        <result column="lesson_relation_id" property="lessonRelationId" />
+        <result column="course_id" property="courseId" />
+        <result column="category_id" property="categoryId" />
+        <result column="lesson_sort" property="lessonSort" />
+        <result column="lesson_id" property="lessonId" />
+        <result column="lesson_create_state" property="lessonCreateState" />
+        <result column="create_time" property="createTime" />
+        <result column="disabled" property="disabled" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id, lesson_relation_id, course_id, category_id, lesson_sort, lesson_id, lesson_create_state, create_time, disabled
+    </sql>
+
+</mapper>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.evan.springboot.general.mapper.CourseClickNodeDao">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.evan.springboot.general.model.CourseClickNodeModel">
+        <id column="id" property="id" />
+        <result column="click_node_unique" property="clickNodeUnique" />
+        <result column="lesson_unique" property="lessonUnique" />
+        <result column="create_date" property="createDate" />
+        <result column="modify_date" property="modifyDate" />
+        <result column="is_delete" property="isDelete" />
+        <result column="show_time" property="showTime" />
+        <result column="bgm_url" property="bgmUrl" />
+        <result column="guide_url" property="guideUrl" />
+        <result column="exercise_time" property="exerciseTime" />
+        <result column="closing_url" property="closingUrl" />
+        <result column="background_url" property="backgroundUrl" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id, click_node_unique, lesson_unique, create_date, modify_date, is_delete, show_time, bgm_url, guide_url, exercise_time, closing_url, background_url
+    </sql>
+
+</mapper>

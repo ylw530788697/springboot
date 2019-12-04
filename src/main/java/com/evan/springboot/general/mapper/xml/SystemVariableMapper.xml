@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.evan.springboot.general.mapper.SystemVariableDao">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.evan.springboot.general.model.SystemVariableModel">
+        <id column="id" property="id" />
+        <result column="variable_key" property="variableKey" />
+        <result column="variable_value" property="variableValue" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id, variable_key, variable_value
+    </sql>
+
+</mapper>

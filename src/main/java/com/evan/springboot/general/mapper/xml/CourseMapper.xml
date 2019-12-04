@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.evan.springboot.general.mapper.CourseDao">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.evan.springboot.general.model.CourseModel">
+        <id column="id" property="id" />
+        <result column="course_unique" property="courseUnique" />
+        <result column="create_date" property="createDate" />
+        <result column="modify_date" property="modifyDate" />
+        <result column="is_delete" property="isDelete" />
+        <result column="title" property="title" />
+        <result column="cover_url" property="coverUrl" />
+        <result column="detail_url" property="detailUrl" />
+        <result column="original_price" property="originalPrice" />
+        <result column="current_price" property="currentPrice" />
+        <result column="sequence" property="sequence" />
+        <result column="have_material" property="haveMaterial" />
+        <result column="is_publish" property="isPublish" />
+        <result column="update_time" property="updateTime" />
+        <result column="category_count" property="categoryCount" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id, course_unique, create_date, modify_date, is_delete, title, cover_url, detail_url, original_price, current_price, sequence, have_material, is_publish, update_time, category_count
+    </sql>
+
+</mapper>
