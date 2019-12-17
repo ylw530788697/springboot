@@ -1,35 +1,103 @@
 package com.evan.springboot.study;
 
 import com.alibaba.fastjson.JSON;
+import com.alibaba.fastjson.JSONObject;
 import sun.misc.PostVMInitHook;
 
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Random;
+import java.util.Scanner;
 import java.util.Stack;
 
 public class Test {
     public static void main(String[] args) {
-       /* int size=10;
-        double[] mylist=new double[size];
-        mylist[0]=5.6;
-        mylist[1]=1.2;
-        double total=0;
-        for (int i = 0; i < mylist.length; i++) {
-            total+=mylist[i];
+
+        System.out.println(stringDemo2());
+    }
+
+    public static String stringDemo2(){
+        String resutlt=null;
+        int[] a={1,3,4,5};
+        for (int i = 0; i < a.length; i++) {
+            if (i==0){
+                resutlt="["+i+"#";
+            }else if (i==a.length-1){
+                resutlt=resutlt+i+"]";
+            }else {
+                resutlt=resutlt+i+"#";
+            }
         }
-        System.out.println(total);*/
-       /* int[] nums ={2, 7, 11, 15};
-        int target = 9;
-        int[] ints = twoSum(nums,target);
-        System.out.println(JSON.toJSONString(ints));*/
-        //switchDemo(80);
-        //forDemo();
-        //whileDemo();
-        // doWhileDemo();
-        //System.out.println(sumOne(100));
-        //switchDemo(80);
-        //System.out.println(isSam(2, 2));
-        //System.out.println(sum());
-        System.out.println(sum(2, 3));
-        System.out.println(sum());
+        //Arrays.
+        return resutlt;
+    }
+    public static void StringDemo(){
+        String str1="Hello";
+        String st="Hello";
+        char[] charArray={'H','e','l','l','o'};
+        String str3=new String(charArray);
+    }
+
+    public static void StringDemo1(){
+        String str1="Hello";
+        String str2="Hello";
+        //char[] charArray={'H','e','l','l','o'};
+        //String str3=new String(charArray);
+
+    }
+    public static void scannerDemo(){
+
+    }
+    public static void demo5(){
+        Random random = new Random();
+    }
+
+    public static void arrayDemo(){
+        ArrayList<String> strings = new ArrayList<>();
+        System.out.println(strings);
+    }
+    public static  void arrayRevert(){
+        int[] a={1,2,3,12,15,20,30};
+        for (int i = 0; i < (a.length-1)/2; i++) {
+            int b=a[i];
+            a[i]=a[a.length-1-i];
+            a[a.length-1-i]=b;
+        }
+        System.out.println(JSONObject.toJSONString(a));
+    }
+    public static void arrayDemo4(){
+        int[] array={5,15,20,30,10000};
+        int max=array[0];
+        for (int i = 0; i < array.length; i++) {
+            if (array[i]>max){
+                max=array[i];
+            }
+        }
+        System.out.println(max);
+    }
+    public static  void arrayDemo3(){
+        int[] array1={15,20,30,45};
+        for (int i = 0; i < array1.length; i++) {
+            System.out.println(array1[i]);
+        }
+    }
+    public static void arrayDemo2(){
+        int[] a=new int[3];
+        System.out.println(JSONObject.toJSONString(a));
+        a[2]=20;
+        a[1]=30;
+        System.out.println(JSONObject.toJSONString(a));
+    }
+    public static  void demo1(){
+        //动态初始化
+        int[] arrayA=new int[30];
+        double[] arrayB=new double[10];
+        String[] arrayC=new String[5];
+
+        //静态初始化
+        int[] arrayStatic=new int[]{1,3,4};
+        String[] arrayString={"q","b","c"};
+        System.out.println(JSONObject.toJSONString(arrayString));
 
     }
     public static  int sum(int a,int b){

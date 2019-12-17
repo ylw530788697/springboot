@@ -63,7 +63,7 @@ public class CodeGenerator {
 
         // 策略配置
         StrategyConfig strategyConfig = new StrategyConfig();
-//         strategyConfig.setInclude("user");//"表名，多个英文逗号分割".split(",")
+         strategyConfig.setInclude("okya_version_manage");//"表名，多个英文逗号分割".split(",")
         strategyConfig
                 .setCapitalMode(false)   // 全局大写命名
                 .setEntityLombokModel(true)   // Lomnok
@@ -93,8 +93,8 @@ public class CodeGenerator {
                 .setSwagger2(true)
                 .setFileOverride(true);  // 每一次生成需要覆盖
         if (!serviceNameStartWithI) {
-            globalConfig.setServiceName("%sProvider");
-            globalConfig.setServiceImplName("%sProviderImpl");
+            globalConfig.setServiceName("I%sProvider");
+            globalConfig.setServiceImplName("%sProvider");
         }
         //代码生成器
         new AutoGenerator().setGlobalConfig(globalConfig)
