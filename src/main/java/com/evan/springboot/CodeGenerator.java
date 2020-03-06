@@ -34,7 +34,7 @@ public class CodeGenerator {
 
     public static void main(String[] args) {
 
-        String packageName = "com.evan.springboot.general";   // 生成的包名
+        String packageName = "com.evan.springboot.tpi";   // 生成的包名
         boolean serviceNameStartWithI = false;//user -> UserService, 设置成true: user -> IUserService
 
         String dir = "D:\\IdeaProject\\springboot\\src\\main\\java";
@@ -63,7 +63,7 @@ public class CodeGenerator {
 
         // 策略配置
         StrategyConfig strategyConfig = new StrategyConfig();
-         strategyConfig.setInclude("okya_version_manage");//"表名，多个英文逗号分割".split(",")
+         //strategyConfig.setInclude("okya_version_manage");//"表名，多个英文逗号分割".split(",")
         strategyConfig
                 .setCapitalMode(false)   // 全局大写命名
                 .setEntityLombokModel(true)   // Lomnok
