@@ -15,6 +15,18 @@ public class ThreadDemo1 {
         impleThread impleThread = new impleThread();
         Thread thread=new Thread(impleThread);
         thread.start();
+
+        Runnable runnable = new Runnable() {
+
+            @Override
+            public void run() {
+                for (int i = 0; i < 10; i++) {
+                    System.out.println(Thread.currentThread().getName() + i);
+                }
+            }
+        };
+        Thread thread1=new Thread(runnable);
+        thread1.start();
     }
 }
 
