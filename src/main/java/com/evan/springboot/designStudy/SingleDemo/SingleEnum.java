@@ -15,7 +15,7 @@ public class SingleEnum {
 
     enum SingleDeme{
         INSTANCE;
-        private SingleEnum singleEnum;
+        private  SingleEnum singleEnum;
         private SingleDeme(){
             singleEnum=new SingleEnum();
         }
