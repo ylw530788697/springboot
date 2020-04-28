@@ -1,4 +1,4 @@
-package com.evan.springboot.designStudy.factory;
+package com.evan.springboot.designStudy.factory.sampleFactory;
 
 /**
  * @author evanYang
@@ -11,9 +11,10 @@ public class CarFactory {
         if(carName.equals("BMW")){
             car=new BMWCar();
         }else if(carName.equals("BenZ")){
-            car=new BenZ();
+            car=new BenZCar();
         }
         return  car;
+
     }
 
     public static void main(String[] args) {

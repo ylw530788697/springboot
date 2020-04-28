@@ -1,4 +1,4 @@
-package com.evan.springboot.designStudy.factory;
+package com.evan.springboot.designStudy.factory.sampleFactory;
 
 /**
  * @author evanYang
