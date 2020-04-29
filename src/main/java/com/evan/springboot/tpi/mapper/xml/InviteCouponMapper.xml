@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.evan.springboot.tpi.mapper.InviteCouponDao">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.evan.springboot.tpi.model.InviteCouponModel">
+        <id column="id" property="id" />
+        <result column="coupon_unique" property="couponUnique" />
+        <result column="create_date" property="createDate" />
+        <result column="modify_date" property="modifyDate" />
+        <result column="is_delete" property="isDelete" />
+        <result column="user_phone" property="userPhone" />
+        <result column="coupon_money" property="couponMoney" />
+        <result column="is_use" property="isUse" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id, coupon_unique, create_date, modify_date, is_delete, user_phone, coupon_money, is_use
+    </sql>
+
+</mapper>

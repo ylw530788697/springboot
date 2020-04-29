@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.evan.springboot.tpi.mapper.TpiUserResourceDao">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.evan.springboot.tpi.model.TpiUserResourceModel">
+        <id column="id" property="id" />
+        <result column="m_unique" property="mUnique" />
+        <result column="user_id" property="userId" />
+        <result column="resource_type" property="resourceType" />
+        <result column="resource_id" property="resourceId" />
+        <result column="resource_status" property="resourceStatus" />
+        <result column="start_time" property="startTime" />
+        <result column="end_time" property="endTime" />
+        <result column="is_delete" property="isDelete" />
+        <result column="version" property="version" />
+        <result column="create_time" property="createTime" />
+        <result column="modify_time" property="modifyTime" />
+        <result column="comment" property="comment" />
+        <result column="mobile" property="mobile" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id, m_unique, user_id, resource_type, resource_id, resource_status, start_time, end_time, is_delete, version, create_time, modify_time, comment, mobile
+    </sql>
+
+</mapper>

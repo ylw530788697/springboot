@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.evan.springboot.tpi.mapper.TpiMusicMenuDao">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.evan.springboot.tpi.model.TpiMusicMenuModel">
+        <id column="id" property="id" />
+        <result column="m_unique" property="mUnique" />
+        <result column="category_id" property="categoryId" />
+        <result column="cover_url" property="coverUrl" />
+        <result column="title" property="title" />
+        <result column="sub_title" property="subTitle" />
+        <result column="songs_count" property="songsCount" />
+        <result column="original_price" property="originalPrice" />
+        <result column="current_price" property="currentPrice" />
+        <result column="sequence" property="sequence" />
+        <result column="vip_state" property="vipState" />
+        <result column="login_state" property="loginState" />
+        <result column="publish_state" property="publishState" />
+        <result column="description" property="description" />
+        <result column="create_time" property="createTime" />
+        <result column="modify_time" property="modifyTime" />
+        <result column="is_delete" property="isDelete" />
+        <result column="version" property="version" />
+        <result column="heat_level" property="heatLevel" />
+        <result column="menu_type" property="menuType" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id, m_unique, category_id, cover_url, title, sub_title, songs_count, original_price, current_price, sequence, vip_state, login_state, publish_state, description, create_time, modify_time, is_delete, version, heat_level, menu_type
+    </sql>
+
+</mapper>

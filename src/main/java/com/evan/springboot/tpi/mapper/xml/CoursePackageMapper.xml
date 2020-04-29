@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.evan.springboot.tpi.mapper.CoursePackageDao">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.evan.springboot.tpi.model.CoursePackageModel">
+        <id column="id" property="id" />
+        <result column="course_package_id" property="coursePackageId" />
+        <result column="course_package_name" property="coursePackageName" />
+        <result column="exchange_type" property="exchangeType" />
+        <result column="course_id" property="courseId" />
+        <result column="course_title" property="courseTitle" />
+        <result column="original_price" property="originalPrice" />
+        <result column="current_price" property="currentPrice" />
+        <result column="is_publish" property="isPublish" />
+        <result column="is_experience" property="isExperience" />
+        <result column="create_time" property="createTime" />
+        <result column="disabled" property="disabled" />
+        <result column="course_package_source" property="coursePackageSource" />
+        <result column="admin_name" property="adminName" />
+        <result column="app_id" property="appId" />
+        <result column="tpi_app_id" property="tpiAppId" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id, course_package_id, course_package_name, exchange_type, course_id, course_title, original_price, current_price, is_publish, is_experience, create_time, disabled, course_package_source, admin_name, app_id, tpi_app_id
+    </sql>
+
+</mapper>

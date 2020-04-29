@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.evan.springboot.tpi.mapper.IntuitiveLikeBackgroundImgDao">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.evan.springboot.tpi.model.IntuitiveLikeBackgroundImgModel">
+        <id column="id" property="id" />
+        <result column="mu" property="mu" />
+        <result column="intuitive_like_unique" property="intuitiveLikeUnique" />
+        <result column="intuitive_type" property="intuitiveType" />
+        <result column="default_state" property="defaultState" />
+        <result column="background_url" property="backgroundUrl" />
+        <result column="create_time" property="createTime" />
+        <result column="modify_time" property="modifyTime" />
+        <result column="is_delete" property="isDelete" />
+        <result column="version" property="version" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id, mu, intuitive_like_unique, intuitive_type, default_state, background_url, create_time, modify_time, is_delete, version
+    </sql>
+
+</mapper>

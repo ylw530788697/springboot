@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.evan.springboot.tpi.mapper.SimpleModelDao">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.evan.springboot.tpi.model.SimpleModelModel">
+        <id column="id" property="id" />
+        <result column="simple_id" property="simpleId" />
+        <result column="simple_type" property="simpleType" />
+        <result column="simple_name" property="simpleName" />
+        <result column="disabled" property="disabled" />
+        <result column="create_time" property="createTime" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id, simple_id, simple_type, simple_name, disabled, create_time
+    </sql>
+
+</mapper>

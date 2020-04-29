@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.evan.springboot.tpi.mapper.TpiSearchKeywordStatisticsDao">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.evan.springboot.tpi.model.TpiSearchKeywordStatisticsModel">
+        <id column="id" property="id" />
+        <result column="m_unique" property="mUnique" />
+        <result column="keyword" property="keyword" />
+        <result column="create_time" property="createTime" />
+        <result column="modify_time" property="modifyTime" />
+        <result column="is_delete" property="isDelete" />
+        <result column="version" property="version" />
+        <result column="search_count" property="searchCount" />
+        <result column="item_type" property="itemType" />
+        <result column="item_id" property="itemId" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id, m_unique, keyword, create_time, modify_time, is_delete, version, search_count, item_type, item_id
+    </sql>
+
+</mapper>

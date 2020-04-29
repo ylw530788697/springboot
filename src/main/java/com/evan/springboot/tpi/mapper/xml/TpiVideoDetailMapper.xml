@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.evan.springboot.tpi.mapper.TpiVideoDetailDao">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.evan.springboot.tpi.model.TpiVideoDetailModel">
+        <id column="id" property="id" />
+        <result column="m_unique" property="mUnique" />
+        <result column="album_id" property="albumId" />
+        <result column="video_url" property="videoUrl" />
+        <result column="title" property="title" />
+        <result column="sequence" property="sequence" />
+        <result column="publish_state" property="publishState" />
+        <result column="create_time" property="createTime" />
+        <result column="modify_time" property="modifyTime" />
+        <result column="is_delete" property="isDelete" />
+        <result column="version" property="version" />
+        <result column="experience_state" property="experienceState" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id, m_unique, album_id, video_url, title, sequence, publish_state, create_time, modify_time, is_delete, version, experience_state
+    </sql>
+
+</mapper>
