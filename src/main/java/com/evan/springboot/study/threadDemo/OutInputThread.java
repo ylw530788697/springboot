@@ -3,6 +3,9 @@ package com.evan.springboot.study.threadDemo;
 import com.alibaba.fastjson.JSONObject;
 import lombok.Data;
 
+import java.util.Hashtable;
+import java.util.concurrent.ConcurrentHashMap;
+
 /**
  * @author evanYang
  * @version 1.0
@@ -83,6 +86,12 @@ public class OutInputThread {
         Output output = new Output(res);
         input.start();
         output.start();
+
+        Hashtable<String, String> hashtable = new Hashtable<>();
+        String dd = hashtable.get("dd");
+        ConcurrentHashMap<Object, Object> hashMap = new ConcurrentHashMap<>();
+        Object put = hashMap.put(1, 3);
+
 
     }
 }
