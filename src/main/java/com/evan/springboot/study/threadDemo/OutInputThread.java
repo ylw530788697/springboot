@@ -92,6 +92,5 @@ public class OutInputThread {
         ConcurrentHashMap<Object, Object> hashMap = new ConcurrentHashMap<>();
         Object put = hashMap.put(1, 3);
 
-
     }
 }

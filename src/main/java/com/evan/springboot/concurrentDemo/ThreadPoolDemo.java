@@ -1,6 +1,5 @@
-package com.evan.springboot.study.concurrentDemo;
+package com.evan.springboot.concurrentDemo;
 
-import java.util.concurrent.Executor;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.concurrent.ScheduledExecutorService;
