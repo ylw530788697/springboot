@@ -4,7 +4,7 @@ package com.evan.springboot.general.controller;
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.baomidou.mybatisplus.core.conditions.update.UpdateWrapper;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
-import com.baomidou.mybatisplus.extension.service.additional.update.impl.UpdateChainWrapper;
+import com.baomidou.mybatisplus.extension.conditions.update.UpdateChainWrapper;
 import com.evan.springboot.general.mapper.OrderDetailDao;
 import com.evan.springboot.general.mapper.UserDao;
 import com.evan.springboot.general.model.OrderDetailModel;

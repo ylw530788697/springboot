@@ -80,18 +80,18 @@
         <dependency>
           <groupId>com.baomidou</groupId>
           <artifactId>mybatis-plus-boot-starter</artifactId>
-          <version>3.2.0</version>
+          <version>3.3.1</version>
       </dependency>
       <dependency>
           <groupId>com.baomidou</groupId>
           <artifactId>mybatis-plus-extension</artifactId>
-          <version>3.2.0</version>
+          <version>3.3.1</version>
       </dependency>
       <!--&lt;!&ndash; 自动生成代码依赖 https://mvnrepository.com/artifact/com.baomidou/mybatis-plus-generator &ndash;&gt;-->
       <dependency>
           <groupId>com.baomidou</groupId>
           <artifactId>mybatis-plus-generator</artifactId>
-          <version>3.2.0</version>
+          <version>3.3.1</version>
       </dependency>
       <!--&lt;!&ndash; 模版引擎 &ndash;&gt;-->
       <dependency>
