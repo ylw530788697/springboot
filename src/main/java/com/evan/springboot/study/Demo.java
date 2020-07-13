@@ -3,6 +3,8 @@ package com.evan.springboot.study;
 import lombok.Data;
 
 import java.util.HashMap;
+import java.util.HashSet;
+import java.util.concurrent.locks.ReentrantLock;
 
 /**
  * @author evanYang
@@ -18,6 +20,9 @@ public class Demo {
     }
 
     public static void main(String[] args) {
+        //ReentrantLock lock=new ReentrantLock();
+        //lock.tryLock(){
+        //}
         HashMap<Demo, Integer> map = new HashMap<>();
         Demo demo = new Demo(1);
         map.put(demo, 1);
