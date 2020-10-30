@@ -4,6 +4,7 @@ import lombok.Data;
 
 import java.util.HashMap;
 import java.util.HashSet;
+import java.util.Map;
 import java.util.concurrent.locks.ReentrantLock;
 
 /**
@@ -23,19 +24,12 @@ public class Demo {
         //ReentrantLock lock=new ReentrantLock();
         //lock.tryLock(){
         //}
-        HashMap<Demo, Integer> map = new HashMap<>();
-        Demo demo = new Demo(1);
-        map.put(demo, 1);
-        System.out.println("put 时的hashCode" + demo.hashCode());
+        Map<Integer, Integer> map = new HashMap<>(2);
+        map.put(1,1);
+        map.put(2,2);
+        map.put(3,3);
+        map.get(1);
 
-        Demo demo1 = new Demo(1);
-        map.put(demo1, 2);
-        System.out.println("get 时的hashCode" + demo1.hashCode());
-        Integer value = map.get(demo);
-        System.out.println(value);
-
-        Integer value1 = map.get(demo1);
-        System.out.println(value1);
     }
 
    /* @Override

@@ -34,10 +34,10 @@ public class CodeGenerator {
 
     public static void main(String[] args) {
 
-        String packageName = "com.evan.springboot.tpi";   // 生成的包名
+        String packageName = "com.evan.springboot.testDemo";   // 生成的包名
         boolean serviceNameStartWithI = false;//user -> UserService, 设置成true: user -> IUserService
 
-        String dir = "D:\\IdeaProject\\springboot\\src\\main\\java";
+        String dir = "D:\\IdeaProjects\\springboot\\src\\main\\java";
         generateByTables(serviceNameStartWithI,
                 packageName,
                 dir, ""
@@ -46,20 +46,20 @@ public class CodeGenerator {
     private static void generateByTables(boolean serviceNameStartWithI, String packageName, String dir, String... tableNames ) {
         GlobalConfig globalConfig = new GlobalConfig();
         //mysql
-        //String dbUrl = "jdbc:mysql://127.0.0.1:3306/test?serverTimezone=CTT&useUnicode=true&characterEncoding=utf-8&allowMultiQueries=true";
-        //DataSourceConfig dataSourceConfig = new DataSourceConfig();
-        //dataSourceConfig.setDbType(DbType.MYSQL)
-        //        .setUrl(dbUrl)
-        //        .setUsername("root")
-        //        .setPassword("root")
-        //        .setDriverName("com.mysql.cj.jdbc.Driver");
-        String dbUrl = "jdbc:mysql://119.23.57.4:3306/okya?serverTimezone=CTT&useUnicode=true&characterEncoding=utf-8&allowMultiQueries=true";
+        String dbUrl = "jdbc:mysql://127.0.0.1:3306/test?serverTimezone=CTT&useUnicode=true&characterEncoding=utf-8&allowMultiQueries=true";
         DataSourceConfig dataSourceConfig = new DataSourceConfig();
         dataSourceConfig.setDbType(DbType.MYSQL)
                 .setUrl(dbUrl)
-                .setUsername("okya")
-                .setPassword("SiKe!2#4%6")
+                .setUsername("root")
+                .setPassword("root")
                 .setDriverName("com.mysql.cj.jdbc.Driver");
+        //String dbUrl = "jdbc:mysql://119.23.57.4:3306/okya?serverTimezone=CTT&useUnicode=true&characterEncoding=utf-8&allowMultiQueries=true";
+        //DataSourceConfig dataSourceConfig = new DataSourceConfig();
+        //dataSourceConfig.setDbType(DbType.MYSQL)
+        //        .setUrl(dbUrl)
+        //        .setUsername("okya")
+        //        .setPassword("SiKe!2#4%6")
+        //        .setDriverName("com.mysql.cj.jdbc.Driver");
 
         // 策略配置
         StrategyConfig strategyConfig = new StrategyConfig();
