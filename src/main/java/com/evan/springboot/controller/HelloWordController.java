@@ -2,6 +2,8 @@ package com.evan.springboot.controller;
 
 
 
+import com.alibaba.fastjson.JSONObject;
+import com.evan.springboot.model.User;
 import com.evan.springboot.redis.RedisUtil;
 import io.swagger.annotations.ApiOperation;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -29,5 +31,18 @@ public class HelloWordController {
         redisUtil.get("hehe");
         return (Integer) redisUtil.get("hehe");
     }
+
+
+    @GetMapping("/demo")
+    @ApiOperation(value = "测试", notes = "", httpMethod = "GET")
+    public String demo(){
+        User user = new User();
+        user.setName("evan");
+        user.setAge(19);
+        user.setId(1);
+        return JSONObject.toJSONString(user);
+    }
+
+
 
 }
