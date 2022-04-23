@@ -4,14 +4,27 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Properties;
 import java.util.Random;
+import java.util.concurrent.ConcurrentHashMap;
+import java.util.concurrent.atomic.AtomicInteger;
 
 /**
  * @author evanYang
  * @version 1.0
  * @date 04/14/2020 11:36
  */
-public class TestJVM{
-    public static void main(String[] args) throws InterruptedException {
+public class TestJVM {
+    public static void main(String[] args) {
+        ConcurrentHashMap c = new ConcurrentHashMap();
+        c.put("a","b");
+        AtomicInteger atomicInteger = new AtomicInteger(5);
+        System.out.println(atomicInteger.compareAndSet(5, 10) + "\t" + atomicInteger);
+        System.out.println(atomicInteger.compareAndSet(5, 20) + "\t" + atomicInteger);
+        System.out.println(atomicInteger.compareAndSet(10, 50) + "\t" + atomicInteger);
+        System.out.println(atomicInteger.compareAndSet(50, 60) + "\t" + atomicInteger);
+        //true 10
+        //false 10
+    }
+    /*public static void main(String[] args) throws InterruptedException {
         System.out.print(System.getProperty("test.demo"));
         List<Object> list = new ArrayList<>();
         while (true){
@@ -30,7 +43,7 @@ public class TestJVM{
             Thread.sleep(anInt);
         }
 
-    }
+    }*/
 }
 
 
