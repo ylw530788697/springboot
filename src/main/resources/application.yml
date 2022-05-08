@@ -8,21 +8,21 @@ spring:
     port: 6379
     timeout: 2000
     password: 123456
-    sentinel:
-          master: mymaster
-          nodes: 127.0.0.1:26379
+#    sentinel:
+#          master: mymaster
+#          nodes: 127.0.0.1:26379
 
-#  datasource:
-#    url: jdbc:mysql://127.0.0.1:3306/test?useUnicode=true&characterEncoding=utf8&useServerPrepStmts=false&serverTimezone=Hongkong
-#    username: root
-#    password: root
-#    db-name: test
-#    filters: wall,mergeStat
   datasource:
-      url: jdbc:mysql://119.23.57.4:3306/okya?useUnicode=true&characterEncoding=utf-8&serverTimezone=Asia/Shanghai
-      username: okya
-      password: SiKe!2#4%6
-      filters: wall,mergeSta
+    url: jdbc:mysql://127.0.0.1:3306/test?useUnicode=true&characterEncoding=utf8&useServerPrepStmts=false&serverTimezone=Hongkong
+    username: root
+    password: root
+    db-name: test
+    filters: wall,mergeStat
+#  datasource:
+#      url: jdbc:mysql://119.23.57.4:3306/okya?useUnicode=true&characterEncoding=utf-8&serverTimezone=Asia/Shanghai
+#      username: okya
+#      password: SiKe!2#4%6
+#      filters: wall,mergeSta
 
 mybatis-plus:
   mapper-locations: classpath*:/mapper/**mapper.xml

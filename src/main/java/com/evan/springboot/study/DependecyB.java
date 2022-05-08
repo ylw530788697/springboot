@@ -13,10 +13,10 @@ import org.springframework.stereotype.Component;
 @NoArgsConstructor
 public class DependecyB {
 
-    private DependecyA dependecyA;
-
-    @Autowired
-    public DependecyB(DependecyA dependecyA){
-        this.dependecyA=dependecyA;
-    }
+    //private DependecyA dependecyA;
+    //
+    //@Autowired
+    //public DependecyB(DependecyA dependecyA){
+    //    this.dependecyA=dependecyA;
+    //}
 }
