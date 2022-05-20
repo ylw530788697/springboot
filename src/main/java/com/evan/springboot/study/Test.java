@@ -16,6 +16,8 @@ public class Test {
         System.out.println(stringDemo2());
     }
 
+
+
     public static String stringDemo2(){
         String resutlt=null;
         int[] a={1,3,4,5};
