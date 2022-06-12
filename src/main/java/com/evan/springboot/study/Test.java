@@ -6,14 +6,34 @@ import sun.misc.PostVMInitHook;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.HashMap;
+import java.util.LinkedHashMap;
 import java.util.Random;
 import java.util.Scanner;
 import java.util.Stack;
+import java.util.TreeMap;
 
 public class Test {
     public static void main(String[] args) {
 
-        System.out.println(stringDemo2());
+        //System.out.println(stringDemo2());
+        HashMap<Integer, String> map = new HashMap<>();
+        HashMap<Integer, String> linkedHashMap = new LinkedHashMap<>();
+        TreeMap<Integer, String> treeMap = new TreeMap<Integer, String>();
+        for (int i = 0; i < 10; i++) {
+            map.put(i,"hashMap"+i);
+            linkedHashMap.put(i,"hashMap"+i);
+            treeMap.put(i,"hashMap"+i);
+        }
+
+        map.keySet().forEach(
+                x->{
+                    System.out.println("hashMap"+x+map.get(x));
+                }
+        );
+        Integer integer = treeMap.firstKey();
+        Integer lastKey = treeMap.lastKey();
+        System.out.println(map);
     }
 
 
