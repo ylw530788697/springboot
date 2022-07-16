@@ -4,6 +4,7 @@ package com.evan.springboot.study;
 import org.apache.commons.lang3.StringUtils;
 
 import java.util.HashMap;
+import java.util.TreeMap;
 import java.util.concurrent.ConcurrentHashMap;
 
 /**
@@ -13,9 +14,11 @@ import java.util.concurrent.ConcurrentHashMap;
  */
 public class Cache {
     public  ConcurrentHashMap<String,MyCache> concurrentHashMap;
+    public TreeMap<Integer,String> treeMap;
     private static int size;
     public Cache(int size){
         concurrentHashMap = new ConcurrentHashMap<>(size);
+        treeMap=new TreeMap<Integer,String>();
         this.size=size;
     }
     public Object get(String key){
@@ -57,6 +60,7 @@ public class Cache {
         cache.setWriteTime(System.currentTimeMillis());
         cache.setLastTime(System.currentTimeMillis());
         cache.setValue(value);
+
         //删除最少访问的key
         if (concurrentHashMap.size()>size){
             int min=Integer.MAX_VALUE;
