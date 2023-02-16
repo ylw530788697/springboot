@@ -33,7 +33,6 @@ import java.util.Scanner;
 public class CodeGenerator {
 
     public static void main(String[] args) {
-
         String packageName = "com.evan.springboot.testDemo";   // 生成的包名
         boolean serviceNameStartWithI = false;//user -> UserService, 设置成true: user -> IUserService
 
